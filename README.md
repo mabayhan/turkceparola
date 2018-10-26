@@ -5,7 +5,8 @@ turkceparola is a python app to generate memorable Turkish passwords. But applic
 Future goals;
 
 - Suggestion page
-- webservice
+- webservice (turkceparola.com)
+
+Original idea is based on dinopass.com
 
 This project is still in development. 
-
