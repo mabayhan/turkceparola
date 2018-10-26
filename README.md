@@ -2,6 +2,12 @@
 
 turkceparola is a python app to generate memorable Turkish passwords. But application can be used for any language. 
 
+Usage: 
+
+<pre> ./ws.py 8 </pre>
+
+8 stands for password length, default is 12
+
 Future goals;
 
 - Suggestion page
