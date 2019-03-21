@@ -25,6 +25,13 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 # r = '3'
+
+def fetch(url, data=None):
+    if data is None:
+        return s.get(url).content
+    else:
+        return s.post(url, data=data).content
+
 for r in range(4,13):
     print("counter number :{}".format(r))
     # c.execute('select * from wordlist where word_len = ?; ', (r,))
@@ -32,18 +39,9 @@ for r in range(4,13):
 
     rows = c.fetchall()
     for row in rows:
-        
-
-
 
         URL = 'http://tdk.gov.tr/index.php?option=com_gts&arama=gts&guid=TDK.GTS.5b8f0facbe41f8.01703955'
         s = requests.Session()
-
-        def fetch(url, data=None):
-            if data is None:
-                return s.get(url).content
-            else:
-                return s.post(url, data=data).content
 
         soup = BeautifulSoup(fetch(URL), "html.parser")
         form = soup.find('form')
