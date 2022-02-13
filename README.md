@@ -11,7 +11,7 @@ Usage:
 Future goals;
 
 - Suggestion page
-- webservice (turkceparola.com)
+- webservice (https://2pass.cc)
 
 Original idea is based on dinopass.com
 
